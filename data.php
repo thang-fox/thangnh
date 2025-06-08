@@ -6,7 +6,7 @@ $password = "";
 $dbname = "baitaplon";
 
 // Tạo kết nối
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new PDO($servername, $username, $password, $dbname);
 
 // Kiểm tra kết nối
 if ($conn->connect_error) {
